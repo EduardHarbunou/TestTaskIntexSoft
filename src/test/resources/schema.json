@@ -1,0 +1,352 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "topLevelDomain": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "alpha2Code": {
+      "type": "string"
+    },
+    "alpha3Code": {
+      "type": "string"
+    },
+    "callingCodes": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "capital": {
+      "type": "string"
+    },
+    "altSpellings": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "subregion": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "population": {
+      "type": "integer"
+    },
+    "latlng": {
+      "type": "array",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "demonym": {
+      "type": "string"
+    },
+    "area": {
+      "type": "number"
+    },
+    "gini": {
+      "type": "number"
+    },
+    "timezones": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "borders": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "nativeName": {
+      "type": "string"
+    },
+    "numericCode": {
+      "type": "string"
+    },
+    "flags": {
+      "type": "object",
+      "properties": {
+        "svg": {
+          "type": "string"
+        },
+        "png": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "svg",
+        "png"
+      ]
+    },
+    "currencies": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "symbol": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "name",
+            "symbol"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "iso639_1": {
+              "type": "string"
+            },
+            "iso639_2": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "nativeName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "iso639_1",
+            "iso639_2",
+            "name",
+            "nativeName"
+          ]
+        }
+      ]
+    },
+    "translations": {
+      "type": "object",
+      "properties": {
+        "br": {
+          "type": "string"
+        },
+        "pt": {
+          "type": "string"
+        },
+        "nl": {
+          "type": "string"
+        },
+        "hr": {
+          "type": "string"
+        },
+        "fa": {
+          "type": "string"
+        },
+        "de": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "fr": {
+          "type": "string"
+        },
+        "ja": {
+          "type": "string"
+        },
+        "it": {
+          "type": "string"
+        },
+        "hu": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "br",
+        "pt",
+        "nl",
+        "hr",
+        "fa",
+        "de",
+        "es",
+        "fr",
+        "ja",
+        "it",
+        "hu"
+      ]
+    },
+    "flag": {
+      "type": "string"
+    },
+    "regionalBlocs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "acronym": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "otherAcronyms": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "acronym",
+            "name",
+            "otherAcronyms"
+          ]
+        }
+      ]
+    },
+    "cioc": {
+      "type": "string"
+    },
+    "independent": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "topLevelDomain",
+    "alpha2Code",
+    "alpha3Code",
+    "callingCodes",
+    "capital",
+    "altSpellings",
+    "subregion",
+    "region",
+    "population",
+    "latlng",
+    "demonym",
+    "area",
+    "gini",
+    "timezones",
+    "borders",
+    "nativeName",
+    "numericCode",
+    "flags",
+    "currencies",
+    "languages",
+    "translations",
+    "flag",
+    "regionalBlocs",
+    "cioc",
+    "independent"
+  ]
+}
